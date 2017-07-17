@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link href="../bower_components/animate.css" rel="stylesheet">
+    <link href="../bower_components/swiper/dist/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="iconfont1/iconfont.css">
+    <style>
+        * { margin: 0;padding: 0}
+        html,body,.swiper-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        @keyframes mymove{
+            0%{transform: rotate(0deg);}
+            25%{transform: rotate(90deg);}
+            50%{transform: rotate(180deg);}
+            75%{transform: rotate(270deg);}
+            100%{transform: rotate(360deg);}
+        }
+        .mp3{
+            position: fixed;
+            top: 4vw;
+            left:4vw;
+            width:8vw;
+            height:8vw;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            border-radius:50%;
+            /*opacity: 0.5;*/
+            z-index:9999;
+            /*transition: all 1s;*/
+
+        }
+        .move{
+            animation:mymove 2s linear 0s infinite;
+        }
+        .mp3 span{
+            color: blueviolet;
+            font-size:8vw;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9 {
+            background: #ccc;
+            background-size: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        .box1 p img,.box2 p img,.box3 p img,.box4 p img,.box5 p img,
+        .box6 p img,.box7 p img,.box8 p img,.box9 p img{
+            display: block;width:100%;
+            position: absolute;
+            top:0;
+        }
+        .box1 b img{
+            background: white;
+            width:101%;
+        }
+        .box1 h1{
+            width:95%;
+            font-size: 44px;
+            display: block;position: absolute;
+            color:red;top:220px;
+            text-align: center;
+        }
+        .box1 h1 k{
+            font-size: 70px;
+            color: blue;
+        }
+        .box1 h2{
+            width:92%;
+            display: block;position: absolute;
+            color:yellow;top:300px;
+            text-align: center;
+        }
+        .box1 img, .box2 img, .box3 img, .box4 img,
+        .box5 img, .box6 img, .box7 img, .box8 img,
+        .box9 img{
+            position: absolute;bottom: 0;
+        }
+        .box2 h4,.box3 h4,.box4 h4,.box5 h4,.box6 h4,.box7 h4,
+        .box8 h4{
+            width:80%;
+            display: block;position: absolute;
+            left:10%;
+            font-size: 20px;
+            color:darkviolet;top:260px;
+            text-align: center;
+            line-height: 36px;
+            text-indent: 20px;
+        }
+        .box9 h4{
+            width:80%;
+            display: block;position: absolute;
+            left:10%;
+            color:yellow;top:256px;
+            text-align: center;
+            line-height: 24px;
+            text-indent: 20px;
+        }
+        .swiper-slide img{
+            width:100%;text-align: center;
+        }
+        .swiper-slide .box1 img{
+            display: block;position:absolute;
+            bottom: -160px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="mp3 move">
+        <span class="iconfont icon-icon-music"></span>
+        <audio src="mp3/2.mp3" loop autoplay id="music"></audio>
+    </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="box1">
+                    <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h1 class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                   <k class="iconfont icon-icon_tuopinzhifu"></k>&nbsp;&nbsp;&nbsp;&nbsp;曾&nbsp;&nbsp;&nbsp;&nbsp;经
+                </h1>
+                <h2 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    三区---燃烧之刃---部落《Maybe公会》
+                </h2>
+                <b><img class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/logo1.png"></b>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box2">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                   终于辛辛苦苦的经历几个CD的奋斗，无所次的倒下无数次的爬起来，无数次的看到希望，又无数次的破灭，最终顺利的灭掉了它。<br>--尼珊德拉
+                </h4>
+                <img class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M1.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box3">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    经历了漫长的等待终于又重新开始了征服阴影的世界，同样的倒下与爬起来的挣扎。<br>--乌索克
+                </h4>
+                <img class="ani" swiper-animate-effect="tada" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M20.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box4">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    各种打法，各种研究，各种变阵，2小时解决战斗的吧。<br>--梦靥之龙
+                </h4>
+                <img class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M3.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box5">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                   这个很简单的，由于有人会打，打了几把就打掉了。<br>--艾乐瑞瑟·雷弗拉尔
+                </h4>
+                <img class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M4.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box6">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    记不清打了多久，灭了多少次，多少次的倒下与爬起了。<br>--伊格诺斯·腐蚀之心
+                </h4>
+                <img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M50.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box7">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    开荒了2晚上，由于各种请假，找了一个野人，最终还是过去了。<br>--塞纳留斯
+                </h4>
+                <img class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M60.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box8">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    这个传说中翡翠最简单的BOSS，我们打了一晚上，终于踩在脚下拿到千钧一发成就。<br>--萨维斯
+                </h4>
+                <img class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M7.jpg">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box9">
+                <p><img src="images/beijing.jpg">
+                    <img src="images/logo2.png"> </p>
+                <h4 class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    经历了漫长的征服阴影之路，我们无数次的倒下，无数次的爬起来，无所次的独自舔伤。各种心酸，只有自己知道，最终我们征服了阴影，
+                    至少此刻我们是快乐的，让我们铭记这属于我们的回忆。<br>三区--燃烧之刃--部落<br>《Maybe公会》<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;---妖孽丷依伊然
+                </h4>
+                <img class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"
+                     src="images/M8.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<script src="../bower_components/swiper/dist/js/swiper.js"></script>
+<script src="../bower_components/swiper.animate1.0.2.min.js"></script>
+<script>
+    (function(){
+        var mp3 = document.querySelector(".mp3");
+        var music = document.getElementById("music");
+        var flag = 1;
+        mp3.addEventListener("click",function() {
+            flag *= -1;
+            if (flag == 1) {
+                music.play();
+                mp3.style.animation = "mymove 2s linear 0s infinite";
+            } else {
+                music.pause();
+                mp3.style.animation = "none";
+            }
+        });
+        var swiper = new Swiper(".swiper-container",{
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素
+                swiperAnimate(swiper); //初始化完成开始动画
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            },
+            direction:"vertical",
+            loop:true,
+//            小圆点
+//            pagination : '.swiper-pagination',
+        })
+    })();
+
+</script>
+</body>
+</html>
